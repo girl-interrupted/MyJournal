@@ -1,0 +1,75 @@
+1) irb
+    Recall that irb means 'interactive Ruby shell'
+    It's a quick way to explore the Ruby programming language and try out code without creating a file.
+    IRB evaluates the code you type and displays the results. It gives you access to all of Ruby’s built-in features, as well as any libraries or gems you’ve installed + you can configure IRB to save your command history and even enable auto-completion of your code.
+
+    Explain how irb is a Read-Eval-Print-Loop (REPL)
+    IRB is a Read-Eval-Print Loop, or REPL, a tool offered by many modern programming languages.
+    
+    Use irb to experiment with Ruby
+
+2) Strings
+Define 'String' as an object holding an arbitrary number of (usually) characters
+Explain how to create new Strings
+Use common String methods such as concat, upcase, and chars
+
+3) Variables
+Define variables as assigned values using the = operator
+Explain how to create new new variables
+Use variables to hold different types of values
+
+4) Methods
+Define a method as a way of automating Ruby commands
+Relate methods to writing DRY code
+Implement methods to solve simple problems
+
+5) Booleans
+Know that 'boolean' refers to either true or false
+Explain that everything in Ruby is 'truthy', except false or nil, which are 'falsy'
+Explain ideas of 'truthy' and 'falsy'
+
+6) Arrays
+Define array as indexed collection of related items
+Explain square-bracket notation
+Use array methods such as first, include?, select, map, and iterators like each and inject
+
+7) Control Flows
+Remember that 'control flows' are statements that control the flow of a program
+Use if/else statements to build conditional execution flows
+Connect the idea of booleans with conditional statements in control flows
+Use more terse versions of control flows (such as inline if statements, else statements, and ternary operators)
+Analyse when to swap if/else statements for 'switch' statements
+
+8) Symbols
+Define Symbols as String-like objects that are immutable
+Explain how Symbols' immutability makes them very memory-efficient
+Use Symbols within Hashes as keys
+
+9) Hashes
+Define a hash as a 'dictionary' or 'associative array'
+Give the structure of a hash as { :key => value } or { key: value }
+Use Ruby hashes to solve code Katas
+
+10) Asking for user input
+Explain how to get user input using gets
+Sanitize user input using chomp and chomp!
+
+11) Gems
+Define a ruby gem as a reusable ruby library
+State scenarios where gems are used
+Remember where to find gems
+Explain how to install gems
+
+12) Tips and tricks
+Parallel Assignment
+Recall what parallel assignment is
+Explain why parallel assignment is useful
+
+13) Shovel Operator
+Recall what the 'shovel operator' is
+Explain how to use the 'shovel operator'
+
+14) String Interpolation
+Recall what string interpolation is
+Explain how to use string interpolation
+Use string interpolation to solve code Katas
