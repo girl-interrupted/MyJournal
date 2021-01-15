@@ -15,31 +15,92 @@ Use common String methods such as concat, upcase, and chars
 
 3) Variables
 Define variables as assigned values using the = operator
+    Just like variables, we assign constants using = , and they have to start with a capital letter(or the entire name is in capital letters).
+    Variables can't be read outside the file they're written in, but constants can be.
 Explain how to create new new variables
 Use variables to hold different types of values
 
+        example: 3 + 6 
+        the interpreter executes the code 3 + 2 character-by-character:
+        - the program world fetches the object referenced by the name 3.
+        - the program world asks the object referenced by 3 if it understands the message +.
+        - the object referenced by 3 says "yes, it means 'add the value of whatever number object comes after'".
+        - the program world fetches the object referenced by the name 6.
+        - the first object referenced by 3 adds the value of the object referenced by 6 to itself. The result is returned to the program world.
+        - the program world returns the result to the user: 9.
+        we can assign names to the results of statements: nine = 9.
+
 4) Methods
+
+ (dot) means 'send this object a message'. 1.integer? means "send the object referenced by 1 a message asking it to answer if it's an integer or not.
+        For every message that can be received by an object, that object has some sort of procedure defined on it.
+        A procedure is a set of instructions that is executed by the object, one after the other.
+Like many program objects, these procedures usually have names. A named procedure is called a method.
+Sending an object a message to execute a procedure is referred to as calling a method.
+
 Define a method as a way of automating Ruby commands
 Relate methods to writing DRY code
 Implement methods to solve simple problems
 
+        example: method rand
+        Each time you run rand, you'll get a random float between zero and one. If you give rand an integer argument:
+        integer = 6
+        rand(integer)
+        You'll get a random number between zero and integer - 1 (so here, 0 to 5).
+        
+        Floats vs Integers:
+        The problem is that integer objects don't understand decimal points, so they round them down: 9/2 is 4.5, which the integer referenced by nine rounds down to 4.
+        To use decimal points, we need to use a different kind of number: a float (short for 'floating point number' – that is, the decimal point can float anywhere along the line of numbers)
+        When we send an integer object the message to_f, the integer object says "OK! You're looking for a float object with the same value as me
+        
+        Interface:
+        The set of messages that can be sent to an object is called its interface (from inter (between) and face (form) – so literally the shape of the space 'between objects').
+        Messages that can't be sent to an object simply won't have any way 'into' the object, which will throw an error.
+        All Ruby objects have a method called methods defined on their interface. If you call the methods method, you get a list of every method defined on that object's interface.
+        Object interfaces are detailed in documentation, along with examples of how to use those interfaces.
+        
+        We can instruct objects to do things using messages. Objects might require arguments to be able to answer a message. The list of messages we can send to an object is called its interface.
+        You could make a good guess at what an object was, based on the methods defined on its interface.
+        You also can chain messages, thanks to referential transparency (The principle that "object.message gets replaced by the return value, which can be a new object for a new message" is called referential transparency.).
+        Chaining - queueing up of messages. > four.+(five).+(seven).-(one)
+        
+        
+Messages call methods on an object's interface.
+
 5) Booleans
 Know that 'boolean' refers to either true or false
+       - true and false are used to do logic: often, to manage the control flow.
 Explain that everything in Ruby is 'truthy', except false or nil, which are 'falsy'
 Explain ideas of 'truthy' and 'falsy'
 
-6) Arrays
+    Logical operators - each come in two versions:
+    
+        and and &&
+            - returns true if, and only if, both values also are true. So, only the expression true and true is also true.
+            All of the expressions true and false, false and true, false and false evaluate to false.
+            
+        or and ||
+            - returns true if at least one of the values is true. So, only if both values are false, the operator returns false.
+            
+        not and !
+            - returns the negated, opposite value. not true returns false, and not false returns true.
+            
 Define array as indexed collection of related items
 Explain square-bracket notation
 Use array methods such as first, include?, select, map, and iterators like each and inject
 
 7) Control Flows
+        Manually managing control flow: an object will evaluate statements in parentheses () before any other statement in an instruction:
+            !true && false returns false
+            !(true && false) returns true
 Remember that 'control flows' are statements that control the flow of a program
 Use if/else statements to build conditional execution flows
 Connect the idea of booleans with conditional statements in control flows
 Use more terse versions of control flows (such as inline if statements, else statements, and ternary operators)
 Analyse when to swap if/else statements for 'switch' statements
 
+    Comparison operators are methods defined on, among other things, integers. 1 > 0 would be the same with 1.>(0)
+    
 8) Symbols
 Define Symbols as String-like objects that are immutable
 Explain how Symbols' immutability makes them very memory-efficient
