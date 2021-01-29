@@ -1,0 +1,49 @@
+learning objectives (based on boris bike challenge):
+  Set up a simple project
+  Explain why a complete README is important - https://medium.com/@meakaakka/a-beginners-guide-to-writing-a-kickass-readme-7ac01da88ab3
+  Initialize and push a git project
+  
+  Give the structure of a User Story https://www.mountaingoatsoftware.com/agile/user-stories
+  Extract a Domain Model from User Stories http://sjmog.github.io/posts/502_domain-modelling/
+  
+  Define 'Feature Test'
+        A Domain Model is an abstract representation of the Objects within a system, and the Messages they use to communicate with one another.
+        Once you have a Domain Model for a feature, you need to think about how your Objects and Messages will work together in code.
+  Define a 'stack trace'
+  Use irb to run a 'feature test'
+  
+  Explain how to use a stack trace to debug errors
+  Debug an error using a stack trace
+  
+  Define RSpec as a testing framework (rspec --init)
+  Create a spec file
+  Describe an Object using a specification
+  Set up a Unit Test
+  
+  Pass a unit test
+  Use require
+  
+  Move between Feature and Unit Tests
+  
+  Write an RSpec test using it
+  Test that an Object responds to a Message
+  
+  Debug an error using a stack trace
+  Create a spec file
+  Describe an Object using a spec
+  Set up a unit test
+  Move between unit and feature tests
+  Pass a unit test
+  Use require
+  Test that an Object responds to a message
+  
+  Use Objects within other Objects
+  Use RSpec 'predicate' syntax https://github.com/makersacademy/course/blob/master/pills/rspec_predicate.md
+  Pass a feature test
+  
+   BDD - business-driven development https://github.com/makersacademy/course/blob/master/pills/bdd_cycle.md
+   
+  Write RSpec tests that expect errors
+  Use fail or raise to raise an error
+  Use a 'guard condition'
+ 
